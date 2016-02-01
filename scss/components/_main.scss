@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  overflow: hidden;
+  
+  background-color: $blueblue;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.i-headphones {
+  @include headphones;
+}
+
+@keyframes wiggle {
+
+  0% {
+    transform: rotate(15deg);
+  }
+  
+  35% {
+    transform: rotate(-10deg);
+  }
+  
+  50% {
+    transform: rotate(10deg);
+  }
+  
+  65% {
+    transform: rotate(-10deg);
+  }
+  
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.type {
+  position: relative;
+  left: calc(50% - 15em);
+  max-width: 30em;
+  color: white;
+}
+
+.type p {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
